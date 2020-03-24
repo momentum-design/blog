@@ -19,7 +19,7 @@ timezone: ''
 # root: /gather/
 url: http://localhost:4000/
 root: /
-permalink: :lang/:category/:title/
+permalink: :title.html
 permalink_defaults:
   lang: en
 pretty_urls:
@@ -27,7 +27,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: projects
+source_dir: doc
 public_dir: public
 tag_dir: tags
 archive_dir: archives
@@ -37,7 +37,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :lang/:category/:title.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -107,3 +107,8 @@ deploy:
   repo:
   branch: gh-pages
   message: branch deploy
+
+#
+auto_category:
+ enable: true
+ depth:
