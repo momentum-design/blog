@@ -1,15 +1,15 @@
 <%- partial('_partial/head') %>
 <body>
-  <%- partial('_partial/md-topbar', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/md-topbar', { page: page, site: site }) %>
   <div class="site-con">
     <div class="site-left">
-        <%- partial('_partial/md-sidebar', null, {cache: !config.relative_link}) %>
+        <%- partial('_partial/md-sidebar', { page: page }) %>
     </div>
     <div class='docs-content-area site-right'>
       <%- body %>
     </div>
   </div>
-  <%- partial('_partial/md-footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/md-footer', null) %>
   <script type="text/javascript">
     hljs && hljs.initHighlightingOnLoad();
   </script>

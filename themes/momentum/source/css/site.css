@@ -42,3 +42,5 @@ article ol, article ul, article li{margin-top: 16px;}
 article video { max-width: 80%;}
 article pre { max-width: 80%; white-space: pre-wrap; word-wrap: break-word; }
 article code { padding: 10px 20px !important;}
+
+.md-list-item_cap{text-transform: capitalize;}

@@ -15,10 +15,10 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-# url: http://arthusliang.github.io/gather
-# root: /gather/
-url: http://localhost:4000/
-root: /
+url: https://momentum-design.github.io/blog
+root: /blog/
+# url: http://localhost:4000/
+# root: /
 permalink: :title.html
 permalink_defaults:
   lang: en

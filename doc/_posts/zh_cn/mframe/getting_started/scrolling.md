@@ -1,3 +1,9 @@
+---
+categories:
+  - zh_cn
+  - mframe
+  - getting_started
+---
 # 滚动条动画
 
 [![license](https://img.shields.io/github/license/momentum-design/momentum-ui.svg?color=blueviolet)](https://github.com/momentum-design/momentum-ui/blob/master/charts/LICENSE)

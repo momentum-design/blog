@@ -1,3 +1,8 @@
+---
+categories:
+  - zh_cn
+  - mframe
+---
 # mframe文档指南
 
 这篇文档会告知你如何使用mframe。 开始使用会通过各种实例指导你制作动。基本原理部分则会更细致地介绍mframe。
