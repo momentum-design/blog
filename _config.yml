@@ -3,14 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: momentum blog
 subtitle: ''
 description: ''
 keywords:
 author: Arthus
 language: 
-  - en
-  - zh-CN
+  - en_us
+  - zh_cn
 timezone: ''
 
 # URL
@@ -104,10 +104,9 @@ theme: momentum
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo:
+  repo: https://GITHUB_ACCESS_TOKEN@github.com/momentum-design/blog.git
   branch: gh-pages
-  message: branch deploy
-
+  message: auto deploy
 #
 auto_category:
  enable: true
