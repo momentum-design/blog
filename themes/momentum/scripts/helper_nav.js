@@ -28,6 +28,7 @@ let search = function(query, prop,id) {
 
 hexo.extend.helper.register('md_list', function(page){
     let query = page.categories;
+    console.log(page.raw)
     if(query && query.length>0) {
         let post = query.data[query.length-1].posts;
         if(post.length > 0) {

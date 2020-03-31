@@ -1,6 +1,5 @@
 # Ignore Node
 ###################
-db.json
 .deploy_git
 node_modules
 npm-debug.log*
