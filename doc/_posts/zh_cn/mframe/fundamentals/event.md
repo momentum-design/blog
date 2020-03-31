@@ -1,9 +1,3 @@
----
-categories:
-  - zh_cn
-  - mframe
-  - fundamentals
----
 # 事件
 
 [![license](https://img.shields.io/github/license/momentum-design/momentum-ui.svg?color=blueviolet)](https://github.com/momentum-design/momentum-ui/blob/master/charts/LICENSE)
@@ -11,7 +5,7 @@ categories:
 > mframe
 
 
-当你编写代码来制作动画，而不是直接使用动画素材时，你一定是想控制动画中地一些东西。非常幸运，mframe可以帮你控制动画中地每一帧。
+当你编写代码来制作动画，而不是直接使用动画素材时，你一定是想控制动画中地一些东西。非常幸运，mframe可以帮你控制动画中的每一帧。
 
 在mframe中，你有两个地方可以设置事件。
 
