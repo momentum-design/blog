@@ -107,7 +107,6 @@ deploy:
 #
 auto_category:
  enable: true
- depth:
 
 archive: false
 archive_generator:
