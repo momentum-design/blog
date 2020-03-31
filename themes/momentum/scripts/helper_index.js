@@ -32,28 +32,30 @@ let getProjects = function(query) {
 hexo.extend.helper.register('md_all', function(site, page){
     //console.log(page.categories);
     //console.log(site.categories);
-    let _en_us_root_category = search(site.categories, 'name', 'en_us')[0],
-        _projects = search(site.categories, 'parent', _en_us_root_category._id),
-        ret=[],
+    let ret=[],
+        scategories = site.categories;
+    if(scategories && scategories.length>0) {
+        let _en_us_root_category = search(scategories, 'name', 'en_us')[0],
+        _projects = search(scategories, 'parent', _en_us_root_category._id),
         posts,
         i,l,j,k,
         pt;
 
-    for(i=0,l= _projects.length;i<l;i++) {
-        posts = _projects[i].posts.sort('-date');
-        k = posts.length;
-        for(j=0;j<k;j++) {
-            pt = posts.data[j];
-            if(shortTitle(pt.slug).toUpperCase()!== 'README') { 
-                ret.push(template_card
-                    .replace('$title$', shortTitle(pt.slug))
-                    .replace('$project$', _projects[i].name)
-                    .replace('$desc$', _projects[i].excerpt || '')
-                    .replace('$href$', pt.permalink));
-                break;
+        for(i=0,l= _projects.length;i<l;i++) {
+            posts = _projects[i].posts.sort('-date');
+            k = posts.length;
+            for(j=0;j<k;j++) {
+                pt = posts.data[j];
+                if(shortTitle(pt.slug).toUpperCase()!== 'README') { 
+                    ret.push(template_card
+                        .replace('$title$', shortTitle(pt.slug))
+                        .replace('$project$', _projects[i].name)
+                        .replace('$desc$', _projects[i].excerpt || '')
+                        .replace('$href$', pt.permalink));
+                    break;
+                }
             }
         }
-        //console.log(_projects[i].posts);
     }
     return ret.join('');
     
