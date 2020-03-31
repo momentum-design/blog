@@ -4,11 +4,13 @@ on:
       - master
     paths:
       - 'doc/_posts/en_us/**'
+      - 'themes/**'
   pull_request:
     branches:    
       - master
     paths:
       - 'doc/_posts/en_us/**'
+      - 'themes/**'
 name: generate
 jobs:
   build:

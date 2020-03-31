@@ -6,6 +6,14 @@ let shortTitle = function(title) {
     return t[t.length-1].replace('_', ' ').replace('-', ' ');
 };
 
+let getNavLink = function(item) {
+    let posts = item.posts;
+    if(posts && posts.length>0) {
+        return posts.sort('-date').data[0].permalink;
+    }
+    return item.permalink;
+};
+
 let search = function(query, prop,id) {
     let _items=[];
     query.each(function(item) {
@@ -16,16 +24,9 @@ let search = function(query, prop,id) {
     return _items;
 };
 
-let getNavLink = function(item) {
-    let posts = item.posts;
-    if(posts && posts.length>0) {
-        return posts.sort('-date').data[0].permalink;
-    }
-    return item.permalink;
-};
+// const fragment_cache = hexo.extend.helper.get('fragment_cache').bind(hexo);
 
 hexo.extend.helper.register('md_list', function(page){
-    //parent _id
     let query = page.categories;
     if(query && query.length>0) {
         let post = query.data[query.length-1].posts;
