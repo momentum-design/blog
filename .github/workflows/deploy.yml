@@ -32,5 +32,5 @@ jobs:
     - name: Hexo
       run: |
         npm i -g hexo-cli
-        npm i
+        npm i -f
         hexo clean && hexo g && hexo d
