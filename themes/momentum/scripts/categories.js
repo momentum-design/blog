@@ -5,9 +5,16 @@ var fs = require('hexo-fs');
 var logic = function(data) {
     if (data.layout != 'post') return data;
     
-    var postStr;
-    // 1. parse front matter
-    var tmpPost = front.parse(data.raw);
+    var postStr,
+        tmpPost;
+    // 1. parse front matter if in remark
+    var match = data.raw.match(/\<\!\-\-\s*(\S[\S\s]*\S)\s*\-\-\>/);
+    if(match && match.length>1) {
+        tmpPost = front.parse(data.raw.replace(match[0],match[1]));
+    } else {
+        tmpPost = front.parse(data.raw);
+    }
+
     // 2. read old categories
     //
     // 3. generate categories from directory

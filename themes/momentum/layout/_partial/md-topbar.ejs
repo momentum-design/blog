@@ -10,7 +10,10 @@
     </div>
     <nav class="md-top-bar__nav ">
       <div class="md-list md-list--horizontal" role="list">
-        <%- md_nav(site, page) %>
+        <% var navOjbects = md_nav(site, page);
+          navOjbects.forEach( function(item) { %>
+            <a class="md-list-item<%= item.class_active %>" role="listItem" href="<%= item.href %>"><%= __(item.text) %></a>
+        <% }); %>
       </div>
     </nav>
     <div class="md-top-bar__right md-top-bar__language">
@@ -30,7 +33,9 @@
         </div>
       <div class="md-list-separator"></div>
       <nav class="md-tb-mobile__nav" role="navigation">
-        <%- md_nav(site, page) %>
+        <% navOjbects.forEach( function(item) { %>
+            <a class="md-list-item<%= item.class_active %>" role="listItem" href="<%= item.href %>"><%= __(item.text) %></a>
+        <% }); %>
       </nav>
     </div>
     <div class="md-tb-mobile__mask" role="none"></div>

@@ -24,11 +24,6 @@ let shortTitle = function(title) {
     return t[t.length-1].replace('_', ' ').replace('-', ' ');
 };
 
-let getProjects = function(query) {
-    let _root = search(query, 'name', 'en_us')[0];
-    
-};
-
 hexo.extend.helper.register('md_all', function(site, page){
     //console.log(page.categories);
     //console.log(site.categories);
@@ -42,13 +37,13 @@ hexo.extend.helper.register('md_all', function(site, page){
         pt;
 
         for(i=0,l= _projects.length;i<l;i++) {
-            posts = _projects[i].posts.sort('-date');
+            posts = _projects[i].posts.sort('date');
             k = posts.length;
             for(j=0;j<k;j++) {
                 pt = posts.data[j];
                 if(shortTitle(pt.slug).toUpperCase()!== 'README') { 
                     ret.push(template_card
-                        .replace('$title$', shortTitle(pt.slug))
+                        .replace('$title$', shortTitle(pt.title))
                         .replace('$project$', _projects[i].name)
                         .replace('$desc$', _projects[i].excerpt || '')
                         .replace('$href$', pt.permalink));
@@ -60,8 +55,6 @@ hexo.extend.helper.register('md_all', function(site, page){
     return ret.join('');
     
 });
-
-
 
 hexo.extend.helper.register('md_find_index', function(site, page){
     console.log(page.categories);

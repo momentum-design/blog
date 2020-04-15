@@ -89,3 +89,4 @@ packages
 **/.tmp
 /src/app/data/docs.json
 public/*
+db.json

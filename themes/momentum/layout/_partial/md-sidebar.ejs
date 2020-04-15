@@ -2,7 +2,10 @@
   <div class="md-sidebar__body">
     <div class="md-sidebar-nav">
       <div class="md-list md-list--vertical md-sidebar-nav__group md-sidebar-nav__group--primary" role="list">
-        <%- md_list(page) %>
+        <% var listOjbects = md_list(page);
+        listOjbects.forEach( function(item) { %>
+          <a class="md-list-item<%= item.class_active %> md-list-item_cap md-list-item__center" role="listitem" href="<%= item.href %>"><%= item.text %></a>
+        <% }); %>
       </div>
     </div>
   </div>
