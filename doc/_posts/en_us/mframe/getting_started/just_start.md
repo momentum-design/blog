@@ -51,7 +51,7 @@ motion.play();
 
 ## mframe
 
-All the operation in mframe starting with creating an instance of motion object. The most importthing you need to do is to set up key frame status in frames. Then our lib will generator the motion automatically.
+All the operations in mframe start with creating an instance of motion object. The most import thing you need to do is to set up key frame status in frames. Then our lib will generator the motion automatically.
 
 
 ## Set multiple css attribution
