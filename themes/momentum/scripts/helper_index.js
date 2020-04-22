@@ -25,12 +25,16 @@ let shortTitle = function(title) {
 };
 
 hexo.extend.helper.register('md_all', function(site, page){
-    //console.log(page.categories);
-    //console.log(site.categories);
+
     let ret=[],
         scategories = site.categories;
     if(scategories && scategories.length>0) {
-        let _en_us_root_category = search(scategories, 'name', 'en_us')[0],
+        let _en_us_root_category_arr = search(scategories, 'name', 'en_us');
+        if(_en_us_root_category_arr.length===0) {
+            return ret;
+        }
+
+        let _en_us_root_category = _en_us_root_category_arr[0],
         _projects = search(scategories, 'parent', _en_us_root_category._id),
         posts,
         i,l,j,k,

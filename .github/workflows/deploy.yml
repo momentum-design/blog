@@ -33,5 +33,4 @@ jobs:
       run: |
         npm i -g hexo-cli
         npm i -f
-        hexo g
         hexo clean && hexo g && hexo d

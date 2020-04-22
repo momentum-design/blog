@@ -4,7 +4,6 @@ var front = require('hexo-front-matter');
 var fs = require('hexo-fs');
 var logic = function(data) {
     if (data.layout != 'post') return data;
-    
     var postStr,
         tmpPost;
     // 1. parse front matter if in remark
@@ -39,10 +38,11 @@ var logic = function(data) {
     postStr = front.stringify(tmpPost);
     postStr = '---\n' + postStr;
     data.raw = postStr;
-    fs.writeFileSync(data.full_source, postStr, 'utf-8');
-
+    // data.categories = tmpPost.categories;
+    Promise.all([data.setCategories(tmpPost.categories)]);
+    //fs.writeFileSync(data.full_source, postStr, 'utf-8');
     //console.log("Generated: categories [%s] for post [%s]", tmpPost.categories, categories[categories.length-1]);
     return data;
 }
 
-hexo.extend.filter.register('before_post_render', logic, 1000);
+hexo.extend.filter.register('before_post_render', logic, 2);
