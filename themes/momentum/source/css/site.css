@@ -113,6 +113,12 @@ article pre {
     word-wrap: break-word;
 }
 
+article iframe {
+    width: 80%;
+    max-width: 80%;
+    min-width: 60%;
+}
+
 article code {
     padding: 10px 20px !important;
 }
