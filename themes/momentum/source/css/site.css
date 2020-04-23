@@ -31,7 +31,7 @@ article * {
 }
 
 .article-inner>* {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 article a {
@@ -56,38 +56,42 @@ article h5,
 article h6 {
     font-weight: bold;
     color: #292929;
-    margin-top: 48px !important;
-    margin-bottom: 16px;
 }
 
 article h1 {
     font-size: 48px;
     line-height: 64px;
+    margin: 48px 0 24px 0!important;
 }
 
 article h2 {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 64px;
+    margin: 36px 0 24px 0!important;
 }
 
 article h3 {
     font-size: 26px;
     line-height: 32px;
+    margin: 28px 0 20px 0!important;
 }
 
 article h4 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
+    margin: 24px 0 12px 0!important;
 }
 
 article h5 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
+    margin: 20px 0 12px 0!important;
 }
 
 article h6 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
+    margin: 16px 0 8px 0!important;
 }
 
 article p {
@@ -121,6 +125,10 @@ article iframe {
 
 article code {
     padding: 10px 20px !important;
+    background-color: #F8F8F8;
+    border:1px solid #D9D9D9;
+    border-radius: 2px;
+    color: #121212;
 }
 
 .md-list-item_cap {
