@@ -133,7 +133,8 @@ article code {
 }
 
 article p code {
-    margin-left: 7px;
+    padding: 3px 7px !important;
+    margin:0 7px;
 }
 
 .md-list-item_cap {
