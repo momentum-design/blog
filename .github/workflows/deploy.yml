@@ -5,12 +5,14 @@ on:
     paths:
       - 'doc/_posts/en_us/**'
       - 'themes/**'
+      - '!themes/momentum/source/lib/**'
   pull_request:
     branches:    
       - master
     paths:
       - 'doc/_posts/en_us/**'
       - 'themes/**'
+      - '!themes/momentum/source/lib/**'
 name: generate
 jobs:
   build:
