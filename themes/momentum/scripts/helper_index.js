@@ -59,7 +59,3 @@ hexo.extend.helper.register('md_all', function(site, page){
     return ret.join('');
     
 });
-
-hexo.extend.helper.register('md_find_index', function(site, page){
-    console.log(page.categories);
-});

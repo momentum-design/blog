@@ -111,3 +111,9 @@ auto_category:
 archive: false
 archive_generator:
   enabled: false
+
+md_head_lib:
+  mframe: mframe/mframe.js
+  momentum_ui_motion:
+    - mframe/mframe.js
+    - momentum_ui_motion/momentum-ui-motion-min.js

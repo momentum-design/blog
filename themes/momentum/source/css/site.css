@@ -48,6 +48,11 @@ article img {
     flex: 1;
 }
 
+article .artilce_demo {
+    width: 80%;
+    margin: 30px 0px 24px 0;
+}
+
 article h1,
 article h2,
 article h3,
