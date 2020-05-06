@@ -48,6 +48,18 @@ article img {
     flex: 1;
 }
 
+mm-tabs img {
+    max-width: 100%;
+    margin-right: 0px;
+    display: block;
+    flex: none;
+}
+
+article .fade{
+    opacity: 1;
+    transition: none;
+}
+
 article .artilce_demo {
     width: 80%;
     margin: 30px 0px 24px 0;
