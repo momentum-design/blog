@@ -26,10 +26,6 @@ article {
     margin-bottom: 60px;
 }
 
-article * {
-    color: #535759;
-}
-
 .article-inner>* {
     margin-top: 12px;
 }
@@ -117,6 +113,7 @@ article p {
     word-wrap: break-word;
     max-width: 80%;
     margin-top: 3px;
+    color: #535759;
 }
 
 article ol,
