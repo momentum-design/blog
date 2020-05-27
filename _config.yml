@@ -117,3 +117,6 @@ md_head_lib:
   momentum_ui_motion:
     - mframe/mframe.js
     - momentum_ui_motion/momentum-ui-motion-min.js
+
+md_list_sort:
+  components: name

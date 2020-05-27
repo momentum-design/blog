@@ -21,14 +21,22 @@ let search = function (query, prop, id) {
     return _items;
 };
 
+let sortkey = function(config, name) {
+    if(config.md_list_sort && config.md_list_sort[name]) {
+        return config.md_list_sort[name];
+    }
+    return  'date';
+};
+
 hexo.extend.helper.register('md_list', function (page) {
     let query = page.categories,
         ret = [];
 
     if (query && query.length > 0) {
-        let post = query.data[query.length - 1].posts;
+        let doc = query.data[query.length - 1];
+        let post = doc.posts;
         if (post.length > 0) {
-            post.sort('date').each(function (item) {
+            post.sort(sortkey(this.config, doc.name)).each(function (item) {
                 ret.push({
                     class_active: item.permalink === page.permalink ? ' active' : '',
                     href: item.permalink,
