@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Momentum Documents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="/blog/favicon.ico">
+  
+<link rel="stylesheet" href="/blog/css/momentum-ui.min.css">
+<link rel="stylesheet" href="/blog/css/site.css">
+<link rel="stylesheet" href="/blog/css/highlights.css">
+
+  
+<script src="/blog/js/highlight.pack.js"></script>
+
+  <script type="text/javascript" src="/blog/lib/mframe/mframe.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <header class="md-top-bar md-top-bar--light" role="navigation">
+  <div class="md-top-bar__container">
+    <div class="md-top-bar__brand">
+      <a class="md-brand" href="/blog/">
+        <div class="md-brand__logo">
+          <img src="/blog/images/momentum/momentum-color-icon.svg" alt="Momentum UI" />
+        </div>
+        <div class="md-brand__title">Momentum UI</div>
+      </a>
+    </div>
+    <nav class="md-top-bar__nav ">
+      <div class="md-list md-list--horizontal" role="list">
+        
+            <a class="md-list-item" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/fundamentals/motion_object.html">fundamentals</a>
+        
+            <a class="md-list-item active" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">getting started</a>
+        
+      </div>
+    </nav>
+    <div class="md-top-bar__right md-top-bar__language">
+      <a class="md-list-item" role="listItem">language</a>
+      <div class="md-event-overlay__children" style="top: 60px; right: 20px;">
+  <div class="md-menu md-menu-item-container" aria-label="" role="menubar"><div class="md-menu-item" aria-expanded="false" aria-haspopup="false">
+    <a href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html" aria-current="false" class="md-list-item" role="menuitem" tabindex="-1">English</a>
+</div><div class="md-menu-item" aria-expanded="false" aria-haspopup="false">
+    <a href="https://momentum-design.github.io/blog/zh_cn/mframe/getting_started/just_start.html" aria-current="false" class="md-list-item" role="menuitem" tabindex="-1">简体中文</a>
+</div></div>
+</div>
+    </div>
+    <i class="md-top-bar__mobile-menu-button icon icon-list-menu_20"></i>
+    <div class="md-top-bar__mobile md-tb-mobile">
+      <i class="icon icon-cancel_20"></i>
+        <div class="md-top-bar__brand">
+          <a class="md-brand" href="/">
+            <div class="md-brand__logo">
+              <img src="/blog/images/momentum/momentum-color-icon.svg" alt="Momentum UI" />
+            </div>
+            <div class="md-brand__title">Momentum UI</div>
+          </a>
+        </div>
+      <div class="md-list-separator"></div>
+      <nav class="md-tb-mobile__nav" role="navigation">
+        
+            <a class="md-list-item" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/fundamentals/motion_object.html">fundamentals</a>
+        
+            <a class="md-list-item active" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">getting started</a>
+        
+      </nav>
+    </div>
+    <div class="md-tb-mobile__mask" role="none"></div>
+  </div>
+</header>
+
+  <div class="site-con">
+    <div class="site-left">
+        <div class="md-sidebar md-sidebar--indented md-sidebar--nested md-sidebar--expanded">
+  <div class="md-sidebar__body">
+    <div class="md-sidebar-nav">
+      <div class="md-list md-list--vertical md-sidebar-nav__group md-sidebar-nav__group--primary" role="list">
+        
+          <a class="md-list-item active md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">just start</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/spinner.html">spinner</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/scrolling.html">scrolling</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/svg_path.html">svg path</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/canvas.html">canvas</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class='docs-content-area site-right'>
+      <article id="post-en_us/mframe/getting_started/just_start" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <h1 id="Just-Start"><a href="#Just-Start" class="headerlink" title="Just Start"></a>Just Start</h1><p><a href="https://github.com/momentum-design/momentum-ui/blob/master/charts/LICENSE" target="_blank" rel="noopener"><img src="https://img.shields.io/github/license/momentum-design/momentum-ui.svg?color=blueviolet" alt="license"></a></p>
+<blockquote>
+<p>mframe</p>
+</blockquote>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p>Install and manage the mframe using NPM. You may use yarn or npm.</p>
+<p><code>npm install mframe --save</code></p>
+<p>or</p>
+<p><code>yarn add mframe</code></p>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><p>You can also use mframe via script tag. Get <a href="https://github.com/momentum-design/mframe/blob/master/bundles/mframe.js" target="_blank" rel="noopener">mframe.js</a> here.</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&#39;mframe.js&#39;&gt;&lt;/script&gt;</code></p>
+<h2 id="Css-animation"><a href="#Css-animation" class="headerlink" title="Css animation"></a>Css animation</h2><p>We will let you start with a very easy demo. In this demo, you will learn how to change dom’s css.</p>
+<iframe height="300" scrolling="no" title="Motion Start" src="https://codepen.io/arthusliang/embed/WNvpmoG?height=300&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/arthusliang/pen/WNvpmoG' target="_blank" rel="noopener">Motion Start</a> by Arthus
+  (<a href='https://codepen.io/arthusliang' target="_blank" rel="noopener">@arthusliang</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.
+</iframe>
+
+<p><a href="https://codepen.io/arthusliang/pen/WNvpmoG" target="_blank" rel="noopener">Click here to try this demo online</a></p>
+<h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><pre><code>&lt;body&gt;
+  &lt;div id=&#39;ball&#39; class=&#39;ball&#39;&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre><h4 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h4><pre><code>.ball {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #279BE8;
+  width: 50px;
+  height: 50px;
+  display:block;
+}</code></pre><h4 id="JAVASCRIPT"><a href="#JAVASCRIPT" class="headerlink" title="JAVASCRIPT"></a>JAVASCRIPT</h4><pre><code>var motion = mframe([{
+  dom: document.getElementById(&#39;ball&#39;),
+  frames: [
+    { css: { backgroundColor: &#39;#07C1F5&#39; }, time: 0 },
+    { css: { backgroundColor: &#39;#00CF64&#39; }, time: 30},
+    { css: { backgroundColor: &#39;#FC9D03&#39; }, time: 60 },
+    { css: { backgroundColor: &#39;#FF9580&#39; }, time: 90 },
+    { css: { backgroundColor: &#39;#F294F1&#39; }, time: 120 },
+    { css: { backgroundColor: &#39;#07C1F5&#39; }, time: 150 }
+  ]
+}]);
+motion.repeat(Infinity);</code></pre><h2 id="mframe"><a href="#mframe" class="headerlink" title="mframe"></a>mframe</h2><p>All the operation in mframe starting with creating an instance of motion object. The most importthing you need to do is to set up key frame status in frames. Then our lib will generator the motion automatically.</p>
+<h2 id="Set-multiple-css-attribution"><a href="#Set-multiple-css-attribution" class="headerlink" title="Set multiple css attribution"></a>Set multiple css attribution</h2><p>It is also easy to control multiple attribution at the some time. Let’s keep us the Css and Html and just do some small updates in Javascript. </p>
+<iframe height="300" scrolling="no" title="Multiple Props" src="https://codepen.io/arthusliang/embed/RwPpdpX?height=300&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/arthusliang/pen/RwPpdpX' target="_blank" rel="noopener">Multiple Props</a> by Arthus
+  (<a href='https://codepen.io/arthusliang' target="_blank" rel="noopener">@arthusliang</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.
+</iframe>
+
+<p><a href="https://codepen.io/arthusliang/pen/RwPpdpX" target="_blank" rel="noopener">Click here to try this demo online</a></p>
+<h4 id="JAVASCRIPT-1"><a href="#JAVASCRIPT-1" class="headerlink" title="JAVASCRIPT"></a>JAVASCRIPT</h4><pre><code>var motion = mframe([{
+  dom: document.getElementById(&#39;ball&#39;),
+  frames: [
+    { css: { backgroundColor: &#39;#07C1F5&#39;, transform: &#39;scale(1.0)&#39; }, time: 0 },
+    { css: { backgroundColor: &#39;#00CF64&#39;, transform: &#39;scale(1.1)&#39; }, time: 30, tween:&#39;easeIn&#39;},
+    { css: { backgroundColor: &#39;#FC9D03&#39;, transform: &#39;scale(1.0)&#39; }, time: 60, tween:&#39;easeOut&#39; },
+    { css: { backgroundColor: &#39;#FF9580&#39;, transform: &#39;scale(0.9)&#39; }, time: 90, tween:&#39;easeInOut&#39; },
+    { css: { backgroundColor: &#39;#07C1F5&#39;, transform: &#39;scale(1.0)&#39; }, time: 120, tween:&#39;easeIn&#39; }
+  ]
+}]);
+motion.repeat(Infinity);</code></pre><h2 id="frames-rule"><a href="#frames-rule" class="headerlink" title="frames rule"></a>frames rule</h2><ul>
+<li><p>If you set up the value to null, mframe will try to get the value of this attribute automatically. If it fails, mframe will ignore this attribution.</p>
+</li>
+<li><p>If you set up one attribution more the twice at the same frame time, the later one will overwrite the one before.</p>
+</li>
+<li><p>Each attribution will create its own time line. If you have 2 attributions with different tween at a same time, you can setup 2 attributions independently.</p>
+</li>
+<li><p>The time unit is based on frame, not million seconds.</p>
+</li>
+</ul>
+
+  </div>
+</article>
+
+    </div>
+  </div>
+  <footer class="md-footer">
+    <div class="md-list md-list--horizontal md-footer__list" role="list">
+        <a class="md-list-item" ><img  class="md-footer__logo" src="/blog/images/cisco/cisco-logo-white.svg" alt="Momentum UI" /></a>
+        <a class="md-list-item">© 2020 Cisco and/or its affiliates. All rights reserved.</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-3" role="listitem" tabindex="-1" data-md-event-key="md-list-item-3">Support &amp; Feedback</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-4" role="listitem" href="https://www.cisco.com/c/en/us/about/legal/privacy.html" tabindex="-1" data-md-event-key="md-list-item-4" target="_blank">Privacy Policy</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-5" role="listitem" href="https://www.cisco.com/c/en/us/about/legal/privacy.html#cookies" tabindex="-1" data-md-event-key="md-list-item-5" target="_blank">Cookie Policy</a>
+    </div>
+</footer>
+  <script type="text/javascript">
+    hljs && hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

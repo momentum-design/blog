@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Momentum Documents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="/blog/favicon.ico">
+  
+<link rel="stylesheet" href="/blog/css/momentum-ui.min.css">
+<link rel="stylesheet" href="/blog/css/site.css">
+<link rel="stylesheet" href="/blog/css/highlights.css">
+
+  
+<script src="/blog/js/highlight.pack.js"></script>
+
+  <script type="text/javascript" src="/blog/lib/mframe/mframe.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <header class="md-top-bar md-top-bar--light" role="navigation">
+  <div class="md-top-bar__container">
+    <div class="md-top-bar__brand">
+      <a class="md-brand" href="/blog/">
+        <div class="md-brand__logo">
+          <img src="/blog/images/momentum/momentum-color-icon.svg" alt="Momentum UI" />
+        </div>
+        <div class="md-brand__title">Momentum UI</div>
+      </a>
+    </div>
+    <nav class="md-top-bar__nav ">
+      <div class="md-list md-list--horizontal" role="list">
+        
+            <a class="md-list-item" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/fundamentals/motion_object.html">fundamentals</a>
+        
+            <a class="md-list-item active" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">getting started</a>
+        
+      </div>
+    </nav>
+    <div class="md-top-bar__right md-top-bar__language">
+      <a class="md-list-item" role="listItem">language</a>
+      <div class="md-event-overlay__children" style="top: 60px; right: 20px;">
+  <div class="md-menu md-menu-item-container" aria-label="" role="menubar"><div class="md-menu-item" aria-expanded="false" aria-haspopup="false">
+    <a href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/spinner.html" aria-current="false" class="md-list-item" role="menuitem" tabindex="-1">English</a>
+</div><div class="md-menu-item" aria-expanded="false" aria-haspopup="false">
+    <a href="https://momentum-design.github.io/blog/zh_cn/mframe/getting_started/spinner.html" aria-current="false" class="md-list-item" role="menuitem" tabindex="-1">简体中文</a>
+</div></div>
+</div>
+    </div>
+    <i class="md-top-bar__mobile-menu-button icon icon-list-menu_20"></i>
+    <div class="md-top-bar__mobile md-tb-mobile">
+      <i class="icon icon-cancel_20"></i>
+        <div class="md-top-bar__brand">
+          <a class="md-brand" href="/">
+            <div class="md-brand__logo">
+              <img src="/blog/images/momentum/momentum-color-icon.svg" alt="Momentum UI" />
+            </div>
+            <div class="md-brand__title">Momentum UI</div>
+          </a>
+        </div>
+      <div class="md-list-separator"></div>
+      <nav class="md-tb-mobile__nav" role="navigation">
+        
+            <a class="md-list-item" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/fundamentals/motion_object.html">fundamentals</a>
+        
+            <a class="md-list-item active" role="listItem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">getting started</a>
+        
+      </nav>
+    </div>
+    <div class="md-tb-mobile__mask" role="none"></div>
+  </div>
+</header>
+
+  <div class="site-con">
+    <div class="site-left">
+        <div class="md-sidebar md-sidebar--indented md-sidebar--nested md-sidebar--expanded">
+  <div class="md-sidebar__body">
+    <div class="md-sidebar-nav">
+      <div class="md-list md-list--vertical md-sidebar-nav__group md-sidebar-nav__group--primary" role="list">
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/just_start.html">just start</a>
+        
+          <a class="md-list-item active md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/spinner.html">spinner</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/scrolling.html">scrolling</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/svg_path.html">svg path</a>
+        
+          <a class="md-list-item md-list-item_cap md-list-item__center" role="listitem" href="https://momentum-design.github.io/blog/en_us/mframe/getting_started/canvas.html">canvas</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class='docs-content-area site-right'>
+      <article id="post-en_us/mframe/getting_started/spinner" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <h1 id="Spinner"><a href="#Spinner" class="headerlink" title="Spinner"></a>Spinner</h1><p><a href="https://github.com/momentum-design/momentum-ui/blob/master/charts/LICENSE" target="_blank" rel="noopener"><img src="https://img.shields.io/github/license/momentum-design/momentum-ui.svg?color=blueviolet" alt="license"></a></p>
+<blockquote>
+<p>mframe</p>
+</blockquote>
+<p>In this section, we will teach you how to create a loading animation with mframe.</p>
+<h2 id="Control-more-than-one-doms"><a href="#Control-more-than-one-doms" class="headerlink" title="Control more than one doms"></a>Control more than one doms</h2><p>In the atricle Just Start, you have already learn how to move a dom changes. You may already notice the fisrt argument in function mframe is an array. This enable you to control more than one doms.</p>
+<iframe height="400" style="width: 100%;" scrolling="no" title="Multiple Doms" src="https://codepen.io/arthusliang/embed/mdJWoGe?height=400&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/arthusliang/pen/mdJWoGe' target="_blank" rel="noopener">Multiple Doms</a> by Arthus
+  (<a href='https://codepen.io/arthusliang' target="_blank" rel="noopener">@arthusliang</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.
+</iframe>
+
+<p><a href="https://codepen.io/arthusliang/details/mdJWoGe" target="_blank" rel="noopener">Click here to try this demo online</a></p>
+<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><pre><code>var motion = mframe([{
+  dom: document.getElementById(&#39;con&#39;),
+  frames: [
+    { css: { transform: &#39;rotate(0deg)&#39; }, time: 0 },
+    { css: { transform: &#39;rotate(360deg)&#39; }, time: 120, tween: &#39;easeInOut&#39; },
+  ]
+},{
+  dom: document.getElementById(&#39;ball&#39;),
+  frames: [
+    { css: { transform: &#39;scale(0.4)&#39;, opacity: &#39;0&#39; }, time: 0 },
+    { css: { opacity: &#39;1.0&#39; }, time: 40},
+    { css: { transform: &#39;scale(1.5)&#39;, opacity: &#39;1.0&#39; }, tween: &#39;easeInOut&#39;, time: 100},
+    { css: { opacity: &#39;0&#39; }, time: 120},
+  ]
+}]);
+motion.repeat(Infinity);</code></pre><h3 id="repeat"><a href="#repeat" class="headerlink" title="repeat"></a>repeat</h3><p>You can use repeat to setup how many times you want to play this animation.</p>
+<h3 id="dom"><a href="#dom" class="headerlink" title="dom"></a>dom</h3><p>You can also pause an array of dom here. Notice that mframe can only get the fisrt dom’s attribution if you set up a null value.</p>
+<h2 id="Make-a-spinner"><a href="#Make-a-spinner" class="headerlink" title="Make a spinner"></a>Make a spinner</h2><p>Let’s add more balls here. </p>
+<p>In this demo, you will control one container to rotate while control a ball to change its attribution.</p>
+<iframe height="500" style="width: 100%;" scrolling="no" title="loading" src="https://codepen.io/arthusliang/embed/poJeYXL?height=500&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/arthusliang/pen/poJeYXL' target="_blank" rel="noopener">loading</a> by Arthus
+  (<a href='https://codepen.io/arthusliang' target="_blank" rel="noopener">@arthusliang</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.
+</iframe>
+
+<p><a href="https://codepen.io/arthusliang/pen/poJeYXL" target="_blank" rel="noopener">Click here to try this demo online</a></p>
+<h4 id="Code-1"><a href="#Code-1" class="headerlink" title="Code"></a>Code</h4><pre><code>var createMotionObject = function(id) {
+  let delay = (id-1)*12;
+  return [{
+    dom: document.getElementById(&#39;con&#39;+id),
+    frames: [
+      { css: { transform: &#39;rotate(0deg)&#39; }, time: delay },
+      { css: { transform: &#39;rotate(360deg)&#39; }, time: 120 + delay, tween: &#39;easeInOut&#39; },
+    ]
+  },{
+    dom: document.getElementById(&#39;ball&#39;+id),
+    frames: [
+      { css: { transform: &#39;scale(0.4)&#39;, opacity: &#39;0&#39; }, time: delay },
+      { css: { opacity: &#39;1.0&#39; }, time: 40 + delay },
+      { css: { transform: &#39;scale(1)&#39;, opacity: &#39;1.0&#39; }, tween: &#39;easeInOut&#39;, time: 100+ delay},
+      { css: { opacity: &#39;0&#39; }, time: 120 + delay},
+    ]
+  }];
+};
+
+var args = createMotionObject(1).concat(createMotionObject(2)).concat(createMotionObject(3));
+var motion = mframe(args);
+
+motion.repeat(Infinity);</code></pre>
+  </div>
+</article>
+
+    </div>
+  </div>
+  <footer class="md-footer">
+    <div class="md-list md-list--horizontal md-footer__list" role="list">
+        <a class="md-list-item" ><img  class="md-footer__logo" src="/blog/images/cisco/cisco-logo-white.svg" alt="Momentum UI" /></a>
+        <a class="md-list-item">© 2020 Cisco and/or its affiliates. All rights reserved.</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-3" role="listitem" tabindex="-1" data-md-event-key="md-list-item-3">Support &amp; Feedback</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-4" role="listitem" href="https://www.cisco.com/c/en/us/about/legal/privacy.html" tabindex="-1" data-md-event-key="md-list-item-4" target="_blank">Privacy Policy</a>
+        <a class="md-list-item md-link--nav" id="md-list-item-5" role="listitem" href="https://www.cisco.com/c/en/us/about/legal/privacy.html#cookies" tabindex="-1" data-md-event-key="md-list-item-5" target="_blank">Cookie Policy</a>
+    </div>
+</footer>
+  <script type="text/javascript">
+    hljs && hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
